@@ -1,25 +1,25 @@
 package web.controller;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 
 import org.springframework.web.bind.annotation.*;
 import web.model.User;
-import web.model.UserForm;
 import web.service.UserService;
 
 import java.util.List;
 
 @Controller
-//@RequestMapping("/")
+@RequestMapping("/")
 public class UserController {
 
 
-
     private final UserService userService;
-
+    
+    @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
     }
@@ -33,38 +33,22 @@ public class UserController {
     }
     //@RequestMapping(value = { "/addUser" }, method = RequestMethod.GET)
     @GetMapping("/addUser")
-    public String showAddUserPage(Model model) {
+    public String addUser(Model model) {
 
          model.addAttribute("user", new User());
 
         return "addUser";
     }
 
-    //@RequestMapping(value = { "/addUser" }, method = RequestMethod.POST)
-    @PostMapping("/addUser")
-    public String saveUser(Model model, //
-                             @ModelAttribute("userForm") UserForm userForm) {
-
-        String firstName = userForm.getFirstName();
-        String lastName = userForm.getLastName();
-        String email = userForm.getEmail();
-        byte age = userForm.getAge();
-
-
-            User newUser = new User(firstName, lastName, email, age);
-            userService.save(newUser);
-
-            return "redirect:/";
-    }
 
     @PostMapping()
     public String create(@ModelAttribute("user") User user) {
         userService.save(user);
-        return "redirect:/users";
+        return "redirect:/";
     }
 
     @GetMapping("/{id}")
-    public String cardUser(@PathVariable("id") int id, Model model) {
+    public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("user", userService.show(id));
         return "card";
     }

@@ -16,10 +16,10 @@ import java.util.List;
 @RequestMapping("/")
 public class UserController {
 
-
-    private final UserService userService;
-    
     @Autowired
+    private final UserService userService;
+
+
     public UserController(UserService userService) {
         this.userService = userService;
     }
@@ -60,7 +60,6 @@ public class UserController {
     }
 
     @PatchMapping("/{id}")
-    //@RequestMapping(value = { "/{id}" }, method = RequestMethod.PATCH)
     public String update(@ModelAttribute("user") User user, @PathVariable("id") int id) {
         userService.update(id, user);
         return "redirect:/";

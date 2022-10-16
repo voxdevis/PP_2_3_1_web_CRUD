@@ -7,9 +7,11 @@
 <body>
 
 <form th:method="PATCH" th:action="@{/{id}(id=${user.getId()})}" th:object="${user}">
- <input type = "hidden" name="_method" value="patch">
-  <label for="name">First Name </label>
-  <input type="text" th:field="*{firstName}" id="name"/>
+
+  <input type="hidden" th:field="*{id}" readonly="readonly">
+
+  <label for="firstName">First Name </label>
+  <input type="text" th:field="*{firstName}" id="firstName"/>
   <br/>
 
   <label for="lastName">Last Name </label>
@@ -24,7 +26,7 @@
   <input type="number" th:field="*{age}" id="age"/>
   <br/>
 
-  <input type="submit" value="Save"/>
+  <input type="submit" value="Update!"/>
 </form>
 </body>
 </html>

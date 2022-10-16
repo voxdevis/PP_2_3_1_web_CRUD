@@ -16,18 +16,25 @@
 
 <form th:action="@{/}"
       th:object="${user}" method="POST">
-  First Name:
-  <input type="text" th:field="*{firstName}" />
+
+
+
+  <label for="firstName">First Name </label>
+  <input type="text" th:field="*{firstName}" id="firstName"/>
   <br/>
-  Last Name:
-  <input type="text" th:field="*{lastName}" />
+
+  <label for="lastName">Last Name </label>
+  <input type="text" th:field="*{lastName}" id="lastName"/>
   <br/>
-  E-mail:
-  <input type="text" th:field="*{email}" />
+
+  <label for="email">E-mail </label>
+  <input type="text" th:field="*{email}" id="email"/>
   <br/>
-  Age:
-  <input type="text" th:field="*{age}" />
+
+  <label for="age">Age </label>
+  <input type="number" th:field="*{age}" id="age"/>
   <br/>
+
   <input type="submit" value="Create" />
 </form>
 

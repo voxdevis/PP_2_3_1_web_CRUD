@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="031e35ca-7114-4ac8-a0d9-19899c302357" name="Changes" comment="in progress">
+    <list default="true" id="031e35ca-7114-4ac8-a0d9-19899c302357" name="Changes" comment="it works finally">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/addUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/addUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +64,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.17274305",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "spring.configuration.checksum": "bc3fd6286109bdad21992187a57a154e"
   },
   "keyToStringList": {
@@ -213,7 +209,9 @@
       <workItem from="1665770877151" duration="1106000" />
       <workItem from="1665779627063" duration="100000" />
       <workItem from="1665866781240" duration="14367000" />
-      <workItem from="1665936099849" duration="8698000" />
+      <workItem from="1665936099849" duration="9059000" />
+      <workItem from="1665946676481" duration="599000" />
+      <workItem from="1666029261562" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1665241577808</created>
@@ -243,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665940869427</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="it works finally">
+      <created>1665946466156</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665946466156</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +270,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="crutch factory" />
     <MESSAGE value="in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="in progress" />
+    <MESSAGE value="it works finally" />
+    <option name="LAST_COMMIT_MESSAGE" value="it works finally" />
   </component>
 </project>
